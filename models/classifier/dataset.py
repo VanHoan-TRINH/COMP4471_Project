@@ -31,7 +31,7 @@ class FaceMaskDataset(Dataset):
 
     def __getitem__(self, idx):
         img_path = self.dir_label_df["Filepath"][idx]
-        image = read_image(img_path)/255
+        image = read_image(img_path, mode=ImageReadMode.RGB)/255
         label = torch.as_tensor([int(self.dir_label_df["Label"][idx])])
         if self.transform:
             image = self.transform(image.type(torch.DoubleTensor))

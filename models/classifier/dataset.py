@@ -5,7 +5,7 @@ import numpy as np
 import torch
 from torch.utils.data import Dataset, DataLoader
 from torchvision import datasets
-from torchvision.io import read_image
+from torchvision.io import read_image, ImageReadMode
 import torchvision.transforms as transforms
 
 img_size = 224

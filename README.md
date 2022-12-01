@@ -34,7 +34,7 @@
 ## 4. Project Layout
 ```
 project
-├── MaskDetector_demo.ipynb: Project Demo
+├── MaskDetector_demo.ipynb: project demo
 ├── Final_report.pdf: final report for the project
 ├── models
 |   ├── detector: scripts for the detector

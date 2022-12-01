@@ -1,6 +1,6 @@
 import cv2
-from mtcnn.core.detect import create_mtcnn_net, MtcnnDetector
-from mtcnn.core.vision import vis_face
+from mtcnn.implement.detect import create_mtcnn_net, MtcnnDetector
+from mtcnn.implement.vision import vis_face
 import numpy as np
 
 

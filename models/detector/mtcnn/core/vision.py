@@ -136,5 +136,5 @@ def vis_face(im_array, dets, landmarks, save_name):
                 #                          bbox[3] - bbox[1], fill=False,
                 #                          edgecolor=color, linewidth=0.5)
                 #     plt.gca().add_patch(rect)
-        pylab.savefig(save_name)
-        pylab.show()
+    pylab.savefig(save_name)
+    pylab.show()

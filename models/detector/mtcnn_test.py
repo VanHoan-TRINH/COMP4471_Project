@@ -10,7 +10,7 @@ if __name__ == '__main__':
     pnet, rnet, onet = create_mtcnn_net(p_model_path="./final_model/pnet_epoch.pt", r_model_path="./final_model/rnet_epoch.pt", o_model_path="./final_model/onet_epoch.pt", use_cuda=False)
     mtcnn_detector = MtcnnDetector(pnet=pnet, rnet=rnet, onet=onet, min_face_size=24)
 
-    img = cv2.imread("./Aaron_Eckhart_0001.jpg")
+    img = cv2.imread("../../tests/testimage.jpeg")
     img_bg = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     #b, g, r = cv2.split(img)
     #img2 = cv2.merge([r, g, b])
@@ -18,4 +18,4 @@ if __name__ == '__main__':
     print(bboxs)
     print(landmarks)
     save_name = 'test.png'
-    vis_face(img_bg,bboxs,landmarks, save_name)
+    vis_face(img_bg,bboxs,None, save_name)

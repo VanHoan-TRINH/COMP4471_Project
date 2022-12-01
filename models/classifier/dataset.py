@@ -10,6 +10,7 @@ import torchvision.transforms as transforms
 
 img_size = 224
 batch_size = 16
+id2label = {"0": "correct", "1": "incorrect", "2": "not wearing"}
 
 # prepocess data to input to EfficientNet
 transform = transforms.Compose(

@@ -653,7 +653,7 @@ class MtcnnDetector(object):
         return boxes_align, landmark_align
 
 
-    def detect_face(self,img):
+    def detect_face(self,img,verbose=False):
         """Detect face over image
         """
         boxes_align = np.array([])
@@ -687,6 +687,8 @@ class MtcnnDetector(object):
 
             t3 = time.time() - t
             t = time.time()
-            print("time cost " + '{:.3f}'.format(t1+t2+t3) + '  pnet {:.3f}  rnet {:.3f}  onet {:.3f}'.format(t1, t2, t3))
+            
+            if verbose:
+                print("time cost " + '{:.3f}'.format(t1+t2+t3) + '  pnet {:.3f}  rnet {:.3f}  onet {:.3f}'.format(t1, t2, t3))
 
         return boxes_align, landmark_align

@@ -3,9 +3,9 @@ import time
 import numpy as np
 import torch
 from torch.autograd.variable import Variable
-from mtcnn.core.models import PNet,RNet,ONet
-import mtcnn.core.utils as utils
-import mtcnn.core.image_tools as image_tools
+from mtcnn.implement.models import PNet,RNet,ONet
+import mtcnn.implement.utils as utils
+import mtcnn.implement.image_tools as image_tools
 
 
 def create_mtcnn_net(p_model_path=None, r_model_path=None, o_model_path=None, use_cuda=True):

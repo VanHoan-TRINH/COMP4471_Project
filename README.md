@@ -10,7 +10,7 @@
 
 ## 2. Datasets
 - [x] Detector
-  - [x] Widerface: [link]
+  - [x] Widerface: https://arxiv.org/abs/1511.06523
 - [x] Classifier
   - [x] Face Mask Dataset: https://www.kaggle.com/datasets/shiekhburhan/face-mask-dataset
 

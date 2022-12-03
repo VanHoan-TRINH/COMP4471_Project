@@ -35,6 +35,7 @@
 ```
 project
 ├── MaskDetector_demo.ipynb: project demo
+├── MaskDetector_demo_GPU.ipynb: project demo running on GPU instead of CPU
 ├── Final_report.pdf: final report for the project
 ├── models
 |   ├── detector: scripts for the detector
